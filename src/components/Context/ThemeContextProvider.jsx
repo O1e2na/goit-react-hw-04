@@ -1,28 +1,29 @@
-import { useEffect, useState } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { createContext, useEffect, useState } from "react"
+
+export const ThemeContext = createContext()
 
 export const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
-    const parsedValue = JSON.parse(localStorage.getItem('theme'));
-    return parsedValue ?? "blue";
-  });
 
-  const onSelect = (selectValue) => {
-    setTheme(selectValue);
-  };
+    const [theme, setTheme] = useState(() => {
+        const parsedValue = JSON.parse(localStorage.getItem('theme'))
+        return parsedValue ?? "blue"
+    })
 
-  useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(theme));
-  }, [theme]);
+    const onSelect = (selectValue) => {
+        setTheme(selectValue)
+    }
 
-  return (
-    <ThemeContext.Provider
-      value={{
-        theme,
-        onSelect,
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
-  );
-};
+    useEffect(() => {
+        localStorage.setItem('theme', JSON.stringify(theme))
+    }, [theme])
+
+    return (
+        <ThemeContext.Provider
+            value={{
+                theme,
+                onSelect,
+            }}>
+            {children}
+        </ThemeContext.Provider>
+    )
+}
