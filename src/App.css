@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+}
+
+/* BLUE */
+
+header.blue {
+  background-color: #909ebd;
+}
+
+button.blue {
+  border: 2px solid #34598B;
+  background-color: white;
+  color: #34598B;
+}
+
+button.blue:hover {
+  background-color: #e6f1ff;
+}
+
+.input.blue {
+  border: 2px solid #34598B;
+  outline-color: #34598b;
+  background-color: white;
+}
+
+.select.blue {
+  border: 2px solid #34598B;
+  background-color: white;
+  color: #34598B;
+  outline-color: #34598B;
+}
+
+.loader.blue {
+  color: #34598B;
+}
+
+/* DARK */
+
+header.dark {
+  background-color: #343434;
+}
+
+button.dark {
+  border: 2px solid #242424;
+  background-color: #525252;
+  color: #F0F0F0;
+}
+
+button.dark:hover {
+  background-color: #242424;
+}
+
+.input.dark {
+  border: 2px solid #242424;
+  outline-color: #242424;
+  background-color: #525252;
+  color: #ffffff;
+}
+
+.input.dark:placeholder-shown {
+  color: #ffffff;
+}
+
+.select.dark {
+  border: 2px solid #242424;
+  background-color: #525252;
+  color: white;
+  outline-color: #242424;
+}
+
+.buttonLoadMore.dark {
+  background-color: #343434;
+  border: 2px solid #525252;
+}
+
+.buttonLoadMore.dark:hover {
+  background-color: #525252;
+}
+
+.loader.dark {
+  color: #F0F0F0;
+}
+
+
+/* LIGHT */
+
+header.light {
+  background-color: #e4e4e4;
+}
+
+button.light {
+  border: 2px solid #525252;
+  background-color: white;
+  color: #242424;
+}
+
+button.light:hover {
+  background-color: #e4e4e4;
+}
+
+.loader.light {
+  color: #242424;
+}

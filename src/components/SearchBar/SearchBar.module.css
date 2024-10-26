@@ -1,0 +1,10 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    min-width: 100%;
+}
+
+.form {
+    text-align: center;
+}

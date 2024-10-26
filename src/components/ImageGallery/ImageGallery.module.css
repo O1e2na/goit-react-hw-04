@@ -1,0 +1,14 @@
+.item {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 132px;
+    padding-top: 125px;
+    padding-bottom: 32px;
+}

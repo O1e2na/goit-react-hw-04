@@ -1,0 +1,79 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  position: relative;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+  margin-left: 25px;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+  min-width: 100%;
+}
+
+.input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+.input:placeholder-shown {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+}
+
+.select {
+  position: fixed;
+  top: 25px;
+  right: 32px;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.buttonLoadMore {
+  margin-bottom: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
